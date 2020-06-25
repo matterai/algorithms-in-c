@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Makefile: build",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Makefile: clean",
+            "type": "shell",
+            "command": "make clean",
+            "group": "none",
+            "dependsOn": [
+                "Makefile: gcc build all"
+            ]
+        },
+        {
+            "label": "Makefile: build and clean",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Makefile: build",
+                "Makefile: clean"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
