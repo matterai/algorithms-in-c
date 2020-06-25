@@ -8,7 +8,8 @@ static int arr [ARRAY_SIZE] = { 5, 7, 1, 2, 9, 4, 0 };
 int main(int argc, char const *argv[])
 {
     print_array(arr, ARRAY_SIZE);
-//    printf("fuck");
+    insertion_sort(arr, ARRAY_SIZE);
+    print_array(arr, ARRAY_SIZE);
 
     return 0;
 }
