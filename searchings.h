@@ -1,0 +1,1 @@
+int has_repeating_numbers(int *arr, int n);
