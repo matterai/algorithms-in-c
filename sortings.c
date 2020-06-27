@@ -5,6 +5,8 @@ void swap(int *pa, int *pb);
 
 void bubble_sort(int *arr, int n)
 {
+    print_array(arr, n);
+    
     int key, j;
     for(int i = 1; i < n; i++)
     {
@@ -23,6 +25,8 @@ void bubble_sort(int *arr, int n)
 
 void insertion_sort(int *arr, int n)
 {
+    print_array(arr, n);
+
     int key, j;
     for (int i = 1; i < n; i++)
     {
@@ -36,6 +40,8 @@ void insertion_sort(int *arr, int n)
         }
 
         arr[j + 1] = key;
+
+        print_array(arr, n);
     }
 }
 
