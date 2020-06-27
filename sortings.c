@@ -1,19 +1,41 @@
 #include "sortings.h"
+#include "io.h"
 
 void swap(int *pa, int *pb);
 
 void bubble_sort(int *arr, int n)
 {
-    for(int j = 1; j < n; j++)
+    int key, j;
+    for(int i = 1; i < n; i++)
     {
-        int key = arr[j];
+        key = arr[i];
+        j = i - 1;
 
-        int i = j - 1;
-        while (i >= 0 && arr[i] > key)
+        while (j >= 0 && arr[j] > key)
         {
-            swap(&arr[i], &arr[i + 1]);
-            i = i - 1;
+            swap(&arr[j + 1], &arr[j]);
+            j -= 1;
         }
+
+        print_array(arr, n);
+    }
+}
+
+void insertion_sort(int *arr, int n)
+{
+    int key, j;
+    for (int i = 1; i < n; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j -= 1;
+        }
+
+        arr[j + 1] = key;
     }
 }
 
