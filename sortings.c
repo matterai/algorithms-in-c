@@ -2,7 +2,7 @@
 
 void swap(int *pa, int *pb);
 
-void insertion_sort(int *arr, int n)
+void bubble_sort(int *arr, int n)
 {
     for(int j = 1; j < n; j++)
     {

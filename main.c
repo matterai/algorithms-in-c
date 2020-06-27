@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 {
     print_array(arr, ARRAY_SIZE);
 
-    // insertion_sort(arr, ARRAY_SIZE);
+    // bubble_sort(arr, ARRAY_SIZE);
     // print_array(arr, ARRAY_SIZE);
 
     // int has = has_repeating_numbers(arr, ARRAY_SIZE);
