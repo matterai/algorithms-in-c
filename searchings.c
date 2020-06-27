@@ -25,3 +25,14 @@ int has_repeating_numbers(int *arr, int n)
     
     return count == 2;
 }
+
+// return index of v or -1 if could not find.
+int linear_search(int *arr, int n, int v)
+{
+    int i = -1;
+    for (int j = 0; j < n; j++)
+        if (arr[j] == v)
+            i = j;
+
+    return i;
+}
