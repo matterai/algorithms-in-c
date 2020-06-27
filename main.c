@@ -10,7 +10,11 @@ int main(int argc, char const *argv[])
 {
     // bubble_sort(arr, ARRAY_SIZE);
     // insertion_sort(arr, ARRAY_SIZE);
-    selection_sort(arr, ARRAY_SIZE);
+    // selection_sort(arr, ARRAY_SIZE);
+
+    print_array(arr, ARRAY_SIZE);
+    merge_sort(arr, 0, 7);
+    print_array(arr, ARRAY_SIZE);
 
     // int has = has_repeating_numbers(arr, ARRAY_SIZE);
     // printf("sequence has repeating numbers: %d\n", has);

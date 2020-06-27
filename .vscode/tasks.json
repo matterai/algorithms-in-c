@@ -19,7 +19,7 @@
             "command": "make clean",
             "group": "none",
             "dependsOn": [
-                "Makefile: gcc build all"
+                "Makefile: build"
             ]
         },
         {
