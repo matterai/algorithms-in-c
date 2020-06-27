@@ -1,6 +1,8 @@
 #include "sortings.h"
 #include "io.h"
 
+#define INT_MIN -2147483648
+
 void swap(int *pa, int *pb);
 
 void bubble_sort(int *arr, int n)
@@ -62,21 +64,23 @@ void selection_sort(int *arr, int n)
     for(int i = 0; i < n - 1; i++)
     {
         key = arr[i];
-        j = i + 1;
-
-        for (int j = 0; j < n; j++)
+        
+        for (int j = i; j < n; j++)
         {
-            if (j == 2)
+            if (j == i)
             {
                 si = j;
                 min = arr[j];
             }
             else
-                if (arr[j] <= min)
+            {
+                if (arr[j] < min)
                 {
                     si = j;
                     min = arr[j];
                 }
+            }
+
         }
 
         arr[i] = min;

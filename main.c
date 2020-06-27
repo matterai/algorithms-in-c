@@ -4,7 +4,7 @@
 
 #define ARRAY_SIZE 8
 
-static int arr [ARRAY_SIZE] = { 5, 7, 1, 2, 9, 4, 0, 3 };
+static int arr [ARRAY_SIZE] = { 5, 7, 1, 2, 9, 4, 1, 0, 3 };
 
 int main(int argc, char const *argv[])
 {
